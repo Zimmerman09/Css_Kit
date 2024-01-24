@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+.container{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-color:rgba(31, 28, 28, 1);
+    border-bottom-left-radius:85px;
+    border-bottom-right-radius:85px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 0;
+}
+
+.circle1{
+        z-index: -1;
+        height: 626px;
+        width: 631px;
+        left: 1060px;
+        top: -76px;
+        position: absolute;
+        border-radius: 393px;
+        background: #6A8D8F;
+        background: linear-gradient(180deg, #6A8D8F, #0E0E0E);
+        box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.circle2{
+        z-index: -1;
+        height: 518px;
+        width: 518px;
+        left: -140px;
+        top: 182px;
+        position: absolute;
+        border-radius: 393px;
+        background: #6A8D8F;
+        background: linear-gradient(34deg, #5c9598, #000000);
+        box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+.container nav{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 72px;
+    list-style: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+.ul1 li{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    transition: 0.5s ease;
+}
+.ul1 li:hover{
+    border: 1px solid white;
+    padding: 5px 10px;
+    box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 20px;
+}
+.btn1{
+    border: none;
+    z-index: 1;
+    outline: none;
+    font-weight: 100;
+    background-color: rgba(165, 206, 230, 1);
+    padding: 5px 10px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+    
+}
+.btn1:hover{
+    border-radius: 1px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+
+.btn2{
+    font-size: 16px;
+    background: transparent;
+    border:1px solid rgba(165, 206, 230, 1)  ;
+    outline: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease;
+
+}
+.btn2:hover{
+    box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.content{
+    color: white;
+    padding: 100px;
+    font-size: 64px;
+    letter-spacing: 5px;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+.content span{
+    color: red;
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.for-knowmore-btn {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.for-knowmore-btn::after,
+.for-knowmore-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.for-knowmore-btn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.for-knowmore-btn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 2px;
+}
+
+.for-knowmore-btn:hover::before {
+  transform: translate(5%, 5%);
+  width: 100%;
+  height: 100%;
+}
+
+.for-knowmore-btn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.for-knowmore-btn:active::after {
+  transition: 0s;
+}
