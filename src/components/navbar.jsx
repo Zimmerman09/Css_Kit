@@ -2,6 +2,8 @@ import React, { useLayoutEffect, useRef } from "react";
 import "./navbar.css";
 import { gsap, Elastic } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const con = useRef(null);
@@ -13,6 +15,19 @@ const Navbar = () => {
       ease: Elastic.easeOut.config(0.3, 0.2)
     });
   }, []);
+  useGSAP(()=>{
+    gsap.from(".circle1, .circle2", {
+      y: 1000,
+      // duration: 1,
+      stagger: 0.05,
+      ease: Elastic.easeOut.config(0.2, 0.2),
+      scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 5
+      }
+    })
+  },[]);
   return (
     <>
       <div className="container">
@@ -22,10 +37,10 @@ const Navbar = () => {
           <img src="" />
 
           <ul className="ul1">
-            <li>Home</li>
-            <li>Box-Shadow</li>
-            <li>Button</li>
-            <li>Hover</li>
+            <li className="navlinks">Home</li>
+            <li className="navlinks">Box-Shadow</li>
+            <li className="navlinks">Button</li>
+            <li className="navlinks">Hover</li>
           </ul>
 
           <ul>
