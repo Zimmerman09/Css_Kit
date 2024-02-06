@@ -32,7 +32,107 @@ const Navbar = () => {
       }
     })
   },[]);
-  useGSAP(()=>{})
+  useGSAP(()=>{
+    gsap.to(".circle3",{
+      x: 1100,
+      rotate:"360",
+      duration:3,
+      stagger: 0.05,
+      scrollTrigger: {
+        trigger: ".service_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
+  useGSAP(()=>{
+    gsap.to(".circle4",{
+      x: -1100,
+      y:300,
+      rotate:"360",
+      duration:3,
+      scrollTrigger: {
+        trigger: ".service_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
+  useGSAP(()=>{
+    gsap.to(".circle5",{
+       width:200,
+      height: 200, 
+      duration:3,
+      scrollTrigger: {
+        trigger: ".about_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
+  useGSAP(()=>{
+    gsap.to(".circle6",{
+       width:400,
+      height:400, 
+      opacity:0.2,
+      duration:3,
+      scrollTrigger: {
+        trigger: ".about_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
+  useGSAP(()=>{
+    gsap.to(".circle7",{
+       width:400,
+      height:400, 
+      duration:3,
+      scrollTrigger: {
+        trigger: ".contact_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
+  useGSAP(()=>{
+    gsap.to(".circle8",{
+       width:400,
+       borderRadius:"none",
+      height:400, 
+      opacity:0.2,
+      duration:3,
+      scrollTrigger: {
+        trigger: ".about_page",
+        start:"top centre",
+        pin:"true",
+        scrub:"true",
+        markers:"true",
+        toggleActions:"restart pause reverse pause"
+        
+      }
+    })
+  },[])
   return (
     <>
       <div className="container">
