@@ -43,7 +43,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
@@ -60,7 +59,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
@@ -76,7 +74,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
@@ -93,7 +90,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
@@ -109,7 +105,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
@@ -127,7 +122,6 @@ const Navbar = () => {
         start:"top centre",
         pin:"true",
         scrub:"true",
-        markers:"true",
         toggleActions:"restart pause reverse pause"
         
       }
